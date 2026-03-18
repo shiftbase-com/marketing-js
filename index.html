@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing JS — Snippet Overzicht</title>
+  <link rel="stylesheet" href="shared/styles.css">
+  <style>
+    body {
+      padding: 2rem 2rem 4rem;
+      background: #f9fafb;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a1a2e;
+    }
+    h1 { margin-bottom: 0.5rem; }
+    .subtitle { color: #6b7280; margin-bottom: 2rem; }
+    .snippet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .snippet-link {
+      display: block;
+      padding: 1.25rem;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.2s ease;
+    }
+    .snippet-link:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    .snippet-link h2 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+    .snippet-link p  { font-size: 0.875rem; color: #6b7280; }
+  </style>
+</head>
+<body>
+
+  <h1>Marketing JS</h1>
+  <p class="subtitle">Klik op een snippet om de preview te openen.</p>
+
+  <div class="snippet-grid" id="snippet-grid">
+    <!--
+      Voeg hier nieuwe snippets toe.
+      Elke entry is een <a> naar de snippet preview.
+    -->
+
+    <a href="snippets/example-counter/index.html" class="snippet-link">
+      <h2>Example Counter</h2>
+      <p>Demonstratie snippet — simpele klik-teller</p>
+    </a>
+
+    <a href="snippets/nl-roi-businesscase/index.html" class="snippet-link">
+      <h2>ROI- &amp; businesscase-calculator</h2>
+      <p>Bereken het financiële rendement van Shiftbase in drie dimensies</p>
+    </a>
+
+    <a href="snippets/nl-zelftest-rooster/index.html" class="snippet-link">
+      <h2>Zelf-test checklist rooster</h2>
+      <p>Waar lekt tijd uit je rooster? Interactieve checklist met live score</p>
+    </a>
+
+  </div>
+
+</body>
+</html>
