@@ -6,13 +6,27 @@
   <title>ROI- &amp; businesscase-calculator — Preview</title>
   <link rel="stylesheet" href="../../shared/styles.css">
   <style>
-    body { padding: 2rem; background: #f9fafb; }
+    body { padding: 2rem; background: #f9fafb; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; }
+    .sb-embed-block { max-width: 760px; margin: 2rem auto 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.25rem 1.5rem; }
+    .sb-embed-block h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+    .sb-embed-block pre { background: #1e293b; color: #e2e8f0; border-radius: 8px; padding: 1rem; overflow-x: auto; font-size: 0.8rem; line-height: 1.6; white-space: pre; }
+    .sb-embed-block button { margin-top: 0.75rem; padding: 0.5rem 1rem; background: #31a7f0; color: #fff; border: none; border-radius: 6px; font-size: 0.8rem; font-weight: 600; cursor: pointer; }
+    .sb-embed-block button:hover { background: #2891d4; }
   </style>
 </head>
 <body>
 
   <div id="sb-roi-businesscase"></div>
   <script src="snippet.js"></script>
+
+  <div class="sb-embed-block">
+    <h3>Embed code</h3>
+    <pre id="sb-embed-code">&lt;!-- Shiftbase: ROI- &amp; businesscase-calculator --&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shiftbase-com/marketing-js@trunk/shared/styles.css"&gt;
+&lt;div id="sb-roi-businesscase"&gt;&lt;/div&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/shiftbase-com/marketing-js@trunk/snippets/nl-roi-businesscase/snippet.js"&gt;&lt;/script&gt;</pre>
+    <button onclick="navigator.clipboard.writeText(document.getElementById('sb-embed-code').textContent).then(function(){this.textContent='Gekopieerd!'}.bind(this))">Kopieer code</button>
+  </div>
 
 </body>
 </html>
