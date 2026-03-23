@@ -1,0 +1,28 @@
+name: Purge jsDelivr cache
+
+on:
+  push:
+    branches: [trunk]
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Collect changed files
+        id: files
+        run: |
+          FILES=$(git diff --name-only HEAD~1 HEAD -- shared/ snippets/ | tr '\n' ',')
+          echo "changed=$FILES" >> "$GITHUB_OUTPUT"
+
+      - name: Purge jsDelivr cache
+        if: steps.files.outputs.changed != ''
+        run: |
+          IFS=',' read -ra ITEMS <<< "${{ steps.files.outputs.changed }}"
+          for file in "${ITEMS[@]}"; do
+            [ -z "$file" ] && continue
+            URL="https://purge.jsdelivr.net/gh/${{ github.repository }}@trunk/${file}"
+            echo "Purging: $URL"
+            curl -s "$URL" | jq -r '.status // "error"'
+          done
