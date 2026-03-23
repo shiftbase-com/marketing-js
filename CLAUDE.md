@@ -42,12 +42,12 @@ marketing-js/
 
 CSS via jsDelivr:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/[OWNER]/marketing-js@main/shared/styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shiftbase-com/marketing-js@trunk/shared/styles.css">
 ```
 
 JS via jsDelivr:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/[OWNER]/marketing-js@main/snippets/<name>/snippet.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/shiftbase-com/marketing-js@trunk/snippets/<name>/snippet.js"></script>
 ```
 
 ## Local testing

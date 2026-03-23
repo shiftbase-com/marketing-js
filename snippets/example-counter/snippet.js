@@ -6,7 +6,7 @@
  *   <script src="snippet.js"></script>
  *
  * Of via jsDelivr:
- *   <script src="https://cdn.jsdelivr.net/gh/[OWNER]/marketing-js@main/snippets/example-counter/snippet.js"></script>
+ *   <script src="https://cdn.jsdelivr.net/gh/shiftbase-com/marketing-js@trunk/snippets/example-counter/snippet.js"></script>
  */
 (function () {
   'use strict';
