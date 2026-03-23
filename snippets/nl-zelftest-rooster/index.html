@@ -21,7 +21,13 @@
 
   <div class="sb-embed-block">
     <h3>Embed code</h3>
-    <pre id="sb-embed-code">&lt;iframe src="https://cdn.jsdelivr.net/gh/shiftbase-com/marketing-js@trunk/snippets/nl-zelftest-rooster/embed.html" style="width:100%;border:none;" loading="lazy"&gt;&lt;/iframe&gt;</pre>
+    <pre id="sb-embed-code">&lt;!-- Shiftbase: Zelf-test checklist rooster --&gt;
+&lt;link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/shiftbase-com/marketing-js@trunk/shared/styles.css"&gt;
+&lt;div id="sb-zelftest-rooster"&gt;&lt;/div&gt;
+&lt;script
+  src="https://cdn.jsdelivr.net/gh/shiftbase-com/marketing-js@trunk/snippets/nl-zelftest-rooster/snippet.js"&gt;
+&lt;/script&gt;</pre>
     <button onclick="navigator.clipboard.writeText(document.getElementById('sb-embed-code').textContent).then(function(){this.textContent='Gekopieerd!'}.bind(this))">Kopieer code</button>
   </div>
 

@@ -43,7 +43,7 @@
 
 /* ---------- Buttons ---------- */
 
-.sb-btn {
+.sb-widget .sb-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -57,35 +57,35 @@
   text-decoration: none;
 }
 
-.sb-btn:hover {
+.sb-widget .sb-btn:hover {
   transform: translateY(-1px);
 }
 
-.sb-btn:active {
+.sb-widget .sb-btn:active {
   transform: translateY(0);
 }
 
-.sb-btn-primary {
+.sb-widget .sb-btn-primary {
   background-color: #31a7f0;
   color: #fff;
 }
 
-.sb-btn-primary:hover {
+.sb-widget .sb-btn-primary:hover {
   background-color: #2896d9;
 }
 
-.sb-btn-secondary {
+.sb-widget .sb-btn-secondary {
   background-color: #e8f4fd;
   color: #31a7f0;
 }
 
-.sb-btn-secondary:hover {
+.sb-widget .sb-btn-secondary:hover {
   background-color: #d4ecfb;
 }
 
 /* ---------- Cards ---------- */
 
-.sb-card {
+.sb-widget .sb-card {
   background: #fff;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
@@ -95,11 +95,11 @@
 
 /* ---------- Utility ---------- */
 
-.sb-text-center { text-align: center; }
-.sb-text-muted  { color: #6b7280; }
-.sb-mt-1 { margin-top: 0.5rem; }
-.sb-mt-2 { margin-top: 1rem; }
-.sb-mt-3 { margin-top: 1.5rem; }
-.sb-mb-1 { margin-bottom: 0.5rem; }
-.sb-mb-2 { margin-bottom: 1rem; }
-.sb-mb-3 { margin-bottom: 1.5rem; }
+.sb-widget .sb-text-center { text-align: center; }
+.sb-widget .sb-text-muted  { color: #6b7280; }
+.sb-widget .sb-mt-1 { margin-top: 0.5rem; }
+.sb-widget .sb-mt-2 { margin-top: 1rem; }
+.sb-widget .sb-mt-3 { margin-top: 1.5rem; }
+.sb-widget .sb-mb-1 { margin-bottom: 0.5rem; }
+.sb-widget .sb-mb-2 { margin-bottom: 1rem; }
+.sb-widget .sb-mb-3 { margin-bottom: 1.5rem; }
